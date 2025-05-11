@@ -1,0 +1,129 @@
+body {
+    background: #e3f2fd;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    background: #1976d2;
+    color: #fff;
+    padding: 18px 0;
+    text-align: center;
+}
+
+nav {
+    background: #bbdefb;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #1976d2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+section {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px #b3c6d1;
+    padding: 30px;
+}
+
+.intro {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    color: #1976d2;
+}
+
+ul.habilidades {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+ul.habilidades li {
+    background: #f1f8e9;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    border-left: 8px solid #aed581;
+    transition: background 0.3s;
+}
+
+ul.habilidades li.dribbling { border-left-color: #ffb300; }
+ul.habilidades li.vision { border-left-color: #64b5f6; }
+ul.habilidades li.finishing { border-left-color: #e57373; }
+ul.habilidades li.leadership { border-left-color: #ba68c8; }
+ul.habilidades li.teamwork { border-left-color: #81c784; }
+
+ul.habilidades li img {
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+}
+
+ul.habilidades li:hover {
+    background: #e1f5fe;
+}
+
+aside {
+    background: #fffde7;
+    border-left: 5px solid #ffd600;
+    margin: 18px 0;
+    padding: 12px;
+    border-radius: 7px;
+    font-style: italic;
+    color: #6d4c41;
+}
+
+.img-habilidades {
+    display: block;
+    margin: 25px auto 10px auto;
+    width: 90px;
+}
+
+.boton-contacto {
+    display: inline-block;
+    background: #1976d2;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 18px;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 6px #b3c6d1;
+}
+
+.boton-contacto:hover {
+    background: #1565c0;
+    box-shadow: 0 4px 12px #90caf9;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 30px;
+    font-size: 0.95em;
+}
