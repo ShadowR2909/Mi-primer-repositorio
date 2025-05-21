@@ -1,0 +1,222 @@
+:root {
+  --primary: #2d6a4f;
+  --secondary: #40916c;
+  --accent: #ffd166;
+  --bg: #f6fff8;
+  --white: #fff;
+  --gray: #dee2e6;
+  --shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+}
+
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: var(--bg);
+  color: #222;
+  margin: 0;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.2em 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 2em;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+nav a:hover, nav a:focus {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+main {
+  max-width: 1100px;
+  margin: 2.5em auto;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 2.5em 2em 2em 2em;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 2.3em;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: var(--secondary);
+  font-size: 1.5em;
+  margin-bottom: 1.2em;
+  font-weight: 500;
+}
+
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 1.3em 0 1.1em 0;
+  margin-top: 3em;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.05);
+}
+
+.main-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5em;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+
+.main-flex img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(64, 145, 108, 0.08);
+  border: 3px solid var(--gray);
+  width: 320px;
+  max-width: 100%;
+}
+
+.tabla-ejemplo {
+  border-collapse: collapse;
+  width: 370px;
+  min-width: 220px;
+  background: var(--gray);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 1.01em;
+}
+
+.tabla-ejemplo th, .tabla-ejemplo td {
+  border: 1.5px solid var(--primary);
+  padding: 0.7em 0.5em;
+  text-align: center;
+}
+
+.tabla-ejemplo th {
+  background: var(--secondary);
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tabla-ejemplo tr:nth-child(even) {
+  background: var(--white);
+}
+
+.servicios-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 2.5em 0 1em 0;
+}
+
+.servicio-caja {
+  background: linear-gradient(120deg, #e9ffea 70%, #caffbf 100%);
+  padding: 1.2em 1.5em;
+  border-radius: 12px;
+  flex: 1 1 230px;
+  min-width: 220px;
+  border: 2px solid var(--secondary);
+  box-shadow: 0 2px 12px rgba(64, 145, 108, 0.10);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.servicio-caja:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(64, 145, 108, 0.18);
+}
+
+.servicio-caja h2 {
+  color: var(--primary);
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+ul, ol {
+  margin-left: 1.3em;
+  font-size: 1.05em;
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+.formulario-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  max-width: 420px;
+  background: var(--white);
+  padding: 2em 2em 1.5em 2em;
+  border: 2px solid var(--secondary);
+  border-radius: 14px;
+  gap: 1.2em;
+  box-shadow: var(--shadow);
+}
+
+.formulario-flex input,
+.formulario-flex textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: 1.5px solid var(--primary);
+  border-radius: 6px;
+  font-size: 1em;
+  background: var(--bg);
+  transition: border 0.2s;
+  margin-bottom: 0.3em;
+}
+
+.formulario-flex input:focus,
+.formulario-flex textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.formulario-flex button {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 0.8em 2.2em;
+  border-radius: 6px;
+  font-size: 1.07em;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(44, 62, 80, 0.07);
+  transition: background 0.2s, transform 0.13s;
+}
+.formulario-flex button:hover, .formulario-flex button:focus {
+  background: var(--accent);
+  color: var(--primary);
+  transform: scale(1.06);
+}
+
+@media (max-width: 900px) {
+  .main-flex, .servicios-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  main {
+    padding: 1.2em 0.7em 1em 0.7em;
+  }
+}
